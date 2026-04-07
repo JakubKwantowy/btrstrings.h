@@ -266,8 +266,8 @@ void btrslicebydelim(BTRSTRING_T *d, BTRSTRING_T *s, char de) {
         return;
     }
 
-    s->len = 0;
     *d = *s;
+    s->len = 0;
 }
 
 int btrstrcmp(BTRSTRING_T *s1, BTRSTRING_T *s2) {
